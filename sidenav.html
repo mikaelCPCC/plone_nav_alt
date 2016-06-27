@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<style>
+body {
+	background-color: #565454;
+}
+
+#fauxPageLayout {
+	width: 730px;
+	background-color: #FFF;
+	color: #565454; 
+	position: relative;
+	margin: 0 auto;
+}
+
+.relatedNavCallout {
+	background-color: #FFFFCC;
+	color: #000;
+	font-size:18px;
+	cursor:pointer;
+	position: absolute;
+	right: 0px;
+	top: 80px;
+	font-family: arial; 
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+
+
+}
+.relatedNav {
+    height: 40%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    right: 395px;
+    background-color: #065D37;
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-family: arial;
+
+}
+
+.relatedNav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-family: arial;
+    font-size: 14px;
+    color: #f7f7f7;
+    display: block;
+    transition: 0.3s;
+    
+}
+
+.relatedNav a:hover, .offcanvas a:focus{
+    color: #b9bfbc;
+    text-decoration: underline;
+}
+
+
+.closeBtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    margin-left: 50px;
+}
+
+</style>
+
+
+<!-- JavaScript Action -->
+<script>
+function openNav() {
+    document.getElementById("ploneSideNav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("ploneSideNav").style.width = "0";
+}
+</script>
+<!-- end JavaScript action -->
+
+<!-- related content for plone side nav-->
+<div id="ploneSideNav" class="relatedNav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/close.png"></a>
+  <ul>
+  	<li><a href="http://webstaging.cpcc.edu/rootsite/cpcc/its/students/faq-knowledge-base-for-students/download-managment">Download Managment</a>
+  	<li><a href="http://webstaging.cpcc.edu/rootsite/cpcc/its/students/online-tools/sftp-download-setup">SFTP Download &amp; Setup</a>
+  	<li><a href="http://webstaging.cpcc.edu/rootsite/cpcc/its/students/online-tools/software-acquisition">Software Acquisition</a>
+  	<li><a href="http://webstaging.cpcc.edu/rootsite/cpcc/its/students/online-tools/student-email">Student Email</a>
+  	<li><a href="http://webstaging.cpcc.edu/rootsite/cpcc/its/students/online-tools/map-elocker-as-a-network-drive">Map eLocker as a Network Drive</a>
+  	<li><a href="http://webstaging.cpcc.edu/rootsite/cpcc/its/students/online-tools/citrix-virtual-desktop">Citrix Virtual Desktop</a>
+</div>
+<!-- kill related content for plone side nav -->
+<body>
+<div id="fauxPageLayout">
+<img src="http://webstaging.cpcc.edu/rootsite/cpcc/its/images/banners/using-elocker" alt="Using eLocker Banner">
+<p></p>
+
+<span class="relatedNavCallout" onclick="openNav()">&nbsp;+ Open Related Content&nbsp;</span>
+
+
+<p>Web space is provided via E-Locker for  students to  complete college web-based projects. By using this service,  you must  read and agree to the <a href="http://inside.cpcc.edu/P&amp;PManual/ppm6-0/ppm6o20.htm" target="_blank">College Acceptable Use Guidelines</a>.</p>
+<p class="info">In order to use your web space, you must already have a valid <a href="http://cpcclogin.cpcc.edu/">CPCC Login</a>. The following instructions will help you configure your E-Locker space.</p>
+<ol>
+<li>Connect to your E-Locker <a href="https://secure2.cpcc.edu/snap/elocker.rios" target="_blank">via WebDAV or on campus</a> or using the <a class="internal-link" href="its/students/online-tools/sftp-download-setup" target="_blank">SFTP/SCP secure FTP service</a>.</li>
+<li>Create a folder called '<strong>www</strong>'.</li>
+<li>Put any content you wish to be available via the web in the '<strong><strong>www</strong></strong>' folder.</li>
+</ol>
+<p><br />To access your web content via a browser, the URL will be <strong>http://students.cpcc.edu/~&lt;username&gt;</strong> <br />(i.e., http://students.cpcc.edu/~abcde01)</p>
+<p>The maximum     allowed storage is <strong>30 MB</strong> of data. If you  exceed this limit, you will     be unable to save new files, modify  existing files, or perform other tasks. In this event, it is recommended  that Students use a USB flash drive to back up and store files larger  than 30 MB. Additional personal storage solutions include online storage  providers such as <a href="https://docs.google.com/a/email.cpcc.edu">Google Drive</a> or <a href="https://onedrive.live.com/" target="_blank"> Microsoft OneDrive</a> which offer free and premium services.</p>
+<p class="info">If you are taking PHP/MySQL courses, you can also have your database space created by going to <a href="https://lamp.cpcc.edu/phpmyadminsetup/index.php" target="_blank">PHPMyAdminSetup</a> and logging in with your CPCC Login. Once the database has been created, the <a href="https://lamp.cpcc.edu/phpmyadmin/index.php" target="_blank">PHPMyAdmin</a> application can be used to work with your database.</p>
+<p class="info"><strong>Please be aware of our Retention Policy for e-Locker: </strong>E-Locker  files are accessible for as long as the student is <em>enrolled</em> in classes.  If the student does not register for classes during two consecutive  terms (not counting summer), the data in the student's E-locker is  deleted.</p>
+<a herf="tel:7043302722;3550">704-330-2722</a>
+<!-- START HELP DESK NAV HELP -->
+<br />
+<hr />
+<br />
+<table style="width: 100%;">
+<tbody>
+<tr>
+<th colspan="3"><strong> If you need further assistance please contact the CPCC ITS Help Desk.</strong></th>
+</tr>
+<tr>
+<th><a href="its/helpdesk"><img alt="ITS Help Desk Website" src="http://webstaging.cpcc.edu/its/images/global-icons/link-icon" />ITS Help Desk Web Site</a></th> <th><a class="mail-link" href="mailto:helpdesk@cpcc.edu"><img alt="Email the helpdesk" src="http://webstaging.cpcc.edu/its/images/global-icons/email-icon" title="Email Icon" />helpdesk@cpcc.edu</a></th> <th><a href="its/helpdesk/chat-support"><img alt="Connect to Live Chat Support" src="http://webstaging.cpcc.edu/its/images/global-icons/chat-icon" />Live Chat Support </a></th>
+</tr>
+<tr>
+<th><a href="tel:+17043305000"><img alt="Call the helpdesk" src="http://webstaging.cpcc.edu/its/images/global-icons/phone-icon" title="Phone Icon" />704.330.5000</a></th> <th><img alt="Fax the helpdesk" src="http://webstaging.cpcc.edu/its/images/global-icons/phone-icon" title="Fax Icon" />704.330.5475</th> <td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</body>
+</html>
